@@ -77,7 +77,7 @@ body{
 } */
 .intro{
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
 }
 .intro-img{
@@ -91,6 +91,7 @@ body{
 }
 
 .intro-content{
+
     position:absolute;
     top: 50%;
     left: 50%;
@@ -577,12 +578,29 @@ body{
     margin: 0;
     margin-top: 10px;
   }
-  @media(max-width : 1100px){
+  @media(max-width : 1200px){
     .intro-content{
-        top:40%;
+        top:30%;
+        height: 30%;
+    }
+  }
+  @media((max-width:900px) and ( max-height:1000px)){
+    .intro-img{
+        height: 900px;
+    }
+  }
+  @media(max-height: 800px) {
+    .intro-img{
+        height: 700px;
+    }
+    .intro-content{
+        top:50%;
     }
   }
   @media(max-width : 800px){
+    /* .intro-img{
+        height: 800px;
+    } */
     .intro-content{
         top:50%;
         flex-direction: column-reverse;
