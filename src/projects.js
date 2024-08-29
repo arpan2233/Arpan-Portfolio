@@ -3,8 +3,8 @@ const projects = [
         key: "1",
         title:"Portfolio",
         isWebsite: true,
-        websiteLink: "aa",
-        githubRepo: "aa",
+        websiteLink: "https://arpan-portfolio-1.vercel.app/",
+        githubRepo: "https://github.com/arpan2233/Arpan-Portfolio/",
         content: "I created my portfolio using React and JavaScript (ES6), leveraging modern features and best practices. The project includes reusable React components and utilizes hooks for state management and side effects. This setup ensures a dynamic and responsive user experience, showcasing my skills in creating interactive and efficient web applications. The portfolio demonstrates my proficiency in React and my commitment to using contemporary development techniques."
     },
     {
