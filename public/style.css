@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: "Nunito", sans-serif;
+    background-color: #000;
 }
 .navButton{
     width: 30px;
@@ -9,7 +10,7 @@ body{
 }
 .navbar{
     display: flex;
-    background-color: #03aed2;
+    background-color: #000000c9;
     /* background-color: #000; */
     justify-content: space-around;
     position: sticky;
@@ -24,7 +25,7 @@ body{
 .navbarOpen{
     display: flex;
     flex-direction: column;
-    background-color: #03aed2;
+    background-color: #000;
     position:fixed;
     z-index:2;
     /* gap:10px; */
@@ -59,7 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #03aed2;
+    background-color: #000;
     position: fixed;
     z-index: 5;
     width: 100%;
@@ -70,8 +71,15 @@ body{
 }
 .navbar a{
     color: #f0f8ff;
-    text-decoration: none;   
+    text-decoration: none; 
+    transition: text-decoration 1s text-decoration-color 1s text-decoration-thickness 0.1s;  
 }
+.navbar a:hover{
+    text-decoration: underline;
+    text-decoration-color: #f0f8ff;
+    text-decoration-thickness: 2px;
+} 
+
 /* .navbar svg{
     align-self: center;
 } */
@@ -121,7 +129,19 @@ body{
     border-radius: 50px;
     box-shadow: 10px 10px 10px black;
     z-index: 2;
+    animation: slideIn 1s ease-out;
 }
+@keyframes slideIn {
+    from{
+        opacity: 0;
+        /* width: 100px; */
+    }
+    to{
+        opacity: 1;
+        /* width: 250px; */
+    }
+}
+
 .first{
     position: absolute;
     width: 200px;
@@ -132,7 +152,15 @@ body{
     z-index:-1;
     border-radius: 40px;
     box-shadow: 10px 10px 50px black;
-
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-350deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 .second{
     position: absolute;
@@ -144,7 +172,7 @@ body{
     left: 55%;
     border-radius: 40px;
     box-shadow: 10px 10px 50px black;
-
+    animation: rotate 20s linear infinite;
 }
 .third{
     z-index:-1;
@@ -156,8 +184,7 @@ body{
     left:65%;
     border-radius: 30px;
     box-shadow: 10px 10px 50px black;
-
-
+    animation: rotate 20s linear infinite;
 }
 .fourth{
     z-index:-1;
@@ -169,7 +196,7 @@ body{
     left: 30%;
     border-radius: 40px;
     box-shadow: 10px 10px 50px black;
-
+    animation: rotate 20s linear infinite;
 }
 .fifth{
     z-index:-1;
@@ -180,6 +207,8 @@ body{
     top: 70%;
     left: 15%;
     border-radius: 20px;
+    animation: rotate 20s linear infinite;
+    /* animation-timeline: view(); */
     /* box-shadow: 10px 10px 10px black; */
 }
 #about-section{
@@ -187,40 +216,59 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    padding-top: 35px;
+    padding: 35px;
     margin-bottom: 20px;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
     margin: 0;
+    background-image: conic-gradient(black,white,black,black, black,black,black,black);
+
 }
 .about{
     width: 40%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 30px;
-    border-left:5px solid blue;
+    border-left:5px solid rgb(174, 202, 255);
     padding: 20px;
     margin-top:20px ;
     margin-bottom:20px ;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    /* z-index: -10; */
+    animation: slideLeft 3s ease-out ;
+    animation-timeline: view(80% 5%);
+
+}
+@keyframes slideLeft{
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.about p{
+    color:#12181d;
 }
 .about-heading>h3{
-    color: blue
+    color: rgb(14, 11, 11)
 }
 #skills{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: azure;
-    padding-top: 35px;
-    padding-bottom: 20px;
+    background-color: black;
+    /* padding: 35px; */
+    /* border: 1px solid white; */
 }
 #skills h1{
     align-self: flex-start;
     margin-left: 20px;
     margin-top: 30px;
-    color: coral;
-    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -236,10 +284,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: slideLeft 3s ease-out ;
+    animation-timeline: view(80% 5%);
 }
 .skill-headings{
     height: 50px;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid rgb(0, 0, 0);
 }
 .skill-headings button{
     border: none;
@@ -255,7 +305,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    border: 1px solid blue;
+    border: 1px solid rgb(255, 255, 255);
     border-width: 0px 0px 5px 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -276,7 +326,7 @@ body{
     align-items: normal;
 }
 .card-frameworks h2{
-    background-color: blue;
+    background-color: rgb(148, 148, 148);
     color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -305,16 +355,15 @@ body{
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 0, 0);
     border-width: 0px 5px 5px 0px;
 }
 .tech-entry>h3{
     height: 60px;
 }
 #project-section{
-    background-color: rgb(255, 151, 151);
-    /* margin-top: 10px; */
-    border-top: 1px solid rgb(255, 255, 255);
+background-color: #000;
+    /* border-top: 1px solid rgb(255, 255, 255); */
     padding-top: 45px;
 }
 #project-section>h1{
@@ -323,8 +372,8 @@ body{
     padding: 10px;
     border-radius: 10px;
     border:none;
-    color: rgb(255, 117, 37);
-    background-color: rgb(255, 224, 167);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     /* border: 1px solid black; */
     width: 100px;
 }
@@ -339,6 +388,8 @@ body{
     border-radius: 30px;
     width: 50%;
     height: 500px;
+    animation: slideLeft 3s ease-out ;
+    animation-timeline: view(80% 5%);
     /* border: 10px solid red; */
 }
 
@@ -351,6 +402,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    animation: slideLeft 3s ease-out ;
+    animation-timeline: view(80% 5%);
 }
 .expanded h3{
     color: #ff7979ef;
@@ -382,7 +435,7 @@ body{
     height: 90%;
     display: flex;
     border-radius: 40px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: space-around;
     padding: 15px;
@@ -429,8 +482,8 @@ body{
 
 .all-projects::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #737272;
-    border: 1px solid #000;
+    background-color: #3b3737b4;
+    border: 10px solid #ffffff;
 }
 .project-card *{
     margin: 0;
@@ -439,25 +492,31 @@ body{
     align-self: flex-end;
 }
 .expand>button{
-    background-color: rgb(247, 70, 129);
+    background-color: rgb(0, 0, 0);
     color: white;
     width: 70px;
     height: 30px;
     border-radius: 15px;
     border: none;
     margin-right: 5px;
-    cursor:pointer;
-    transition: background-color 0.3s, color 0.3s, border 0.3s, translate 0.2s;
+    cursor: pointer;
+    transition: background-color 0.4s,color 0.4s, border 0.4s;
 }
 .expand>button:hover{
     background-color: white;
-    color: rgb(247, 70, 129);
-    border: 2px solid rgb(247, 70, 129);
+    color: black;
+    border: 2px solid black;
 }
+
+/* .expand>button:active{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+} */
 #experience-section{
-    background-color:#03aed2;
+    background-image: conic-gradient(black,black,black, white,black,black,black,black,black,black,black,black,black);
     padding-top: 45px;
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
 }
 #experience-section>h1{
     width: 130px;
@@ -482,6 +541,8 @@ body{
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    animation: slideLeft 3s ease-out ;
+    animation-timeline: view(80% 5%);
 }
 .experience-card *{
     /* border: 1px solid black; */
@@ -574,7 +635,7 @@ body{
     display: flex;
     justify-content: space-evenly;
   }
-  .social-svg img{
+  .social-svg a>*{
     width: 25px;
     height: 25px;
     filter: drop-shadow(5px 5px 30px white);
