@@ -702,7 +702,7 @@ background-color: #000;
         left:50%;
     }
     .about{
-        width: 70%;
+        width: 80%;
     }
     .skill-table{
         width: 80%;
@@ -789,7 +789,7 @@ background-color: #000;
         align-items: center;
     }
     .experience-card{
-        width: 80%;
+        width: 100%;
     }
 
   }
