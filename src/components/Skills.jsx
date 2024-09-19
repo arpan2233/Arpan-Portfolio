@@ -8,8 +8,8 @@ function Skills() {
     const [FStyle, setFStyle] = useState(-1);
     const [DStyle, setDStyle] = useState(-1);
     const [LStyle, setLStyle] = useState(-1);
-    const Notclicked = {backgroundColor:"white",color:"blue"};
-    const clicked = {backgroundColor:"blue",color:"white"};
+    const Notclicked = {backgroundColor:"white",color:"black"};
+    const clicked = {backgroundColor:"#747474fa",color:"white"};
     return (
         <section id="skills">
             <h1>Skills</h1>
