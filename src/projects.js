@@ -38,6 +38,14 @@ const projects = [
         websiteLink: "https://arpan2233.github.io/Simon-game/",
         githubRepo: "https://github.com/arpan2233/Simon-game",
         content:"I developed a Simon game using JavaScript, focusing on the classic memory challenge where players must follow and replicate increasingly complex sequences of colors and sounds. The game features a user-friendly interface and responsive design, but it is currently optimized only for desktop browsers. This project demonstrates my skills in JavaScript and game logic, providing an engaging experience that tests memory and reaction skills. Mobile optimization is planned for the future."
+    },
+    {
+        key: "6",
+        title:"Role Based Access Control (UI)",
+        isWebsite: true,
+        websiteLink: "https://rbac-tawny-two.vercel.app/",
+        githubRepo: "https://github.com/arpan2233/Simon-game",
+        content:"I made Role Based Access Control UI web application using React Js. It allows the Admin to assign task to the team members, create teams, add members to those teams dynamically, and also allow the admin to edit or delete member and tram details, the user can also see their information , tasks and guidelines. "
     }
 ]
 export {projects};
