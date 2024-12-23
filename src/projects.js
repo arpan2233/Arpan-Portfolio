@@ -44,8 +44,8 @@ const projects = [
         title:"Role Based Access Control (UI)",
         isWebsite: true,
         websiteLink: "https://rbac-tawny-two.vercel.app/",
-        githubRepo: "https://github.com/arpan2233/Simon-game",
-        content:"I made Role Based Access Control UI web application using React Js. It allows the Admin to assign task to the team members, create teams, add members to those teams dynamically, and also allow the admin to edit or delete member and tram details, the user can also see their information , tasks and guidelines. "
+        githubRepo: "https://github.com/arpan2233/RBAC",
+        content:"I made Role Based Access Control UI web application using React Js. It allows the Admin to assign task to the team members, create teams, add members to those teams dynamically, and also allow the admin to edit or delete member and team details, the user can also see their information , tasks and guidelines. "
     }
 ]
 export {projects};
