@@ -5,7 +5,7 @@ function Socials() {
         <div className="social-svg">
             
             <a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-icon.svg" /></a>
-            <a href=""><img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" /></a>
+            <a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-logo-icon.png" /></a>
         </div>
     </section>
 }
