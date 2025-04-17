@@ -2,7 +2,7 @@ const experience = [
     {
         title:"Member of All IPU Community",
         content:"Member of ALL IPU DSA team where we encourage students to learn and practice DSA.Posting questions on WhastApp group and encouraging discussions.",
-        duration:"December 2023 - present",
+        duration:"December 2023 - August 2024",
         isCredentials: false,
         Credential: "NA"
     },
