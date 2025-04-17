@@ -538,6 +538,7 @@ background-color: #000;
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
+    flex-wrap: wrap;
 }
 .experience-card{
     width: 350px;
