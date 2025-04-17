@@ -19,6 +19,13 @@ const experience = [
         duration:"Jun 2024 - Aug 2024 ",
         isCredentials: true,
         Credential:""
+    },
+    {
+        title:"Lead at CodeDojo(Techspace Society)",
+        content:" Leading a team to help students in Data Structures and Algorithm and skill development within the society.Conducted 6 online DSA sessions for over 30 students in a winter Bootcamp organized by the society",
+        duration:"Jan 2025 - present",
+        isCredentials: false,
+        Credential:""
     }
 ];
 export default experience;
