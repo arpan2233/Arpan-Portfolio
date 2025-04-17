@@ -9,7 +9,7 @@ function ProjectCard(props){
         </div>
         <div className="expand">
             <button onClick={() => props.onClick(props.title)}>Expand</button>
-            <button onClick={() => props.onClick("")}>Controct</button>
+            <button onClick={() => props.onClick("")}>Contract</button>
         </div> 
     </div>);
 }
