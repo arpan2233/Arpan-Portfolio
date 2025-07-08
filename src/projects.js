@@ -46,6 +46,15 @@ const projects = [
         websiteLink: "https://rbac-tawny-two.vercel.app/",
         githubRepo: "https://github.com/arpan2233/RBAC",
         content:"I made Role Based Access Control UI web application using React Js. It allows the Admin to assign task to the team members, create teams, add members to those teams dynamically, and also allow the admin to edit or delete member and team details, the user can also see their information , tasks and guidelines. "
+    },
+    {
+         key: "7",
+        title:"TaskPilot",
+        isWebsite: true,
+        websiteLink: "https://task-pilot-liard.vercel.app/",
+        githubRepo: "https://github.com/arpan2233/TaskPilot",
+        content:"Built a responsive and secure task management platform where users can register/login using role-based access (Manager, HR, Senior Dev, Junior Dev). Features include task assignment, team management, note-taking, and internal email communication. Ensured secure user authentication with password hashing, environment variable handling, and efficient database queries. "
     }
+        
 ]
 export {projects};
